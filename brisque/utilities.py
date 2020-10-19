@@ -9,8 +9,7 @@ def root_path(*args):
 
     :return: Absolute path to the asked path.
     """
-    path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), os.pardir))
+    path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
     for item in args:
         path = os.path.abspath(os.path.join(path, item))
 
